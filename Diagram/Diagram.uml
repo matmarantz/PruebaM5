@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="__eIcgJmyEeSu4OXI2-GmPA" name="Diagram">
+  <packagedElement xmi:type="uml:Package" xmi:id="_65aTIJm9EeS1-dr6xYXxbA" name="Magatzem">
+    <ownedComment xmi:id="_YIoWQNGsEeSQNL5iMsLJ4Q" annotatedElement="_65aTIJm9EeS1-dr6xYXxbA">
+      <body>Empty comment</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EeSGMJm_EeS1-dr6xYXxbA" name="Usuario">
+      <ownedAttribute xmi:id="_VEpbgJm_EeS1-dr6xYXxbA" name="dni"/>
+      <ownedAttribute xmi:id="_agBfEJm_EeS1-dr6xYXxbA" name="Nom"/>
+      <ownedAttribute xmi:id="_b0wdYJm_EeS1-dr6xYXxbA" name="cognom"/>
+      <ownedAttribute xmi:id="_dxHcYJm_EeS1-dr6xYXxbA" name="Adreça"/>
+      <ownedAttribute xmi:id="_Z-60YNGqEeSQNL5iMsLJ4Q" name="Cod Postal">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z_ElYNGqEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z_FMcNGqEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_fUKawNGqEeSQNL5iMsLJ4Q" name="Fer commanda"/>
+      <ownedOperation xmi:id="_psOawNGqEeSQNL5iMsLJ4Q" name="Anular commanda"/>
+      <ownedOperation xmi:id="_rhf6UNGqEeSQNL5iMsLJ4Q" name="Registrarse"/>
+      <ownedOperation xmi:id="_zzRjQNGqEeSQNL5iMsLJ4Q" name="Consultar commanda"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2C92sJm_EeS1-dr6xYXxbA" clientDependency="_ESxkUJnAEeS1-dr6xYXxbA" name="Zoo"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ESxkUJnAEeS1-dr6xYXxbA" client="_2C92sJm_EeS1-dr6xYXxbA" supplier="_EeSGMJm_EeS1-dr6xYXxbA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_93A2QJnJEeSKn9p_xl4e_w" name="Director">
+      <ownedComment xmi:id="_eAxOUNGsEeSQNL5iMsLJ4Q">
+        <body>Empty comment</body>
+      </ownedComment>
+      <generalization xmi:id="_KxWWoNGtEeSQNL5iMsLJ4Q" general="_20SLQNGsEeSQNL5iMsLJ4Q"/>
+      <ownedOperation xmi:id="_k2jP0NGrEeSQNL5iMsLJ4Q" name="Donar de alta"/>
+      <ownedOperation xmi:id="_pqPoUNGrEeSQNL5iMsLJ4Q" name="Escollir proveidor"/>
+      <ownedOperation xmi:id="_4GJ4QNGrEeSQNL5iMsLJ4Q" name="Escollir article"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EMIlQJnKEeSKn9p_xl4e_w" name="Operari">
+      <generalization xmi:id="_OyhtENGtEeSQNL5iMsLJ4Q" general="_20SLQNGsEeSQNL5iMsLJ4Q"/>
+      <ownedOperation xmi:id="_BVNeQNGrEeSQNL5iMsLJ4Q" name="Tramitar commanda"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Gm7zwJnKEeSKn9p_xl4e_w" name="Proveidor">
+      <ownedAttribute xmi:id="_OzJnQJnKEeSKn9p_xl4e_w" name="Nom,"/>
+      <ownedAttribute xmi:id="_OzJnQZnKEeSKn9p_xl4e_w" name="DNI"/>
+      <ownedOperation xmi:id="_gL_6UNGtEeSQNL5iMsLJ4Q" name="Proveir"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I-8aUNGsEeSQNL5iMsLJ4Q" name="Article">
+      <ownedAttribute xmi:id="_LtlK0NGsEeSQNL5iMsLJ4Q" name="Codi">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ltr4gNGsEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ltr4gdGsEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QbPz0NGsEeSQNL5iMsLJ4Q" name="Quantitat">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QbWhgNGsEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QbWhgdGsEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_13eIQNGtEeSQNL5iMsLJ4Q" name="CodiProveidor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_20SLQNGsEeSQNL5iMsLJ4Q" name="Empleat">
+      <ownedAttribute xmi:id="_4bcWUNGsEeSQNL5iMsLJ4Q" name="Nom">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4bic8NGsEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4bjEANGsEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_5YsowNGsEeSQNL5iMsLJ4Q" name="Dni">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Yz9gNGsEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5Y0kkNGsEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bLPWMNGtEeSQNL5iMsLJ4Q" name="1-*"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ltYfQNGtEeSQNL5iMsLJ4Q" name="Commanda">
+      <ownedAttribute xmi:id="_4tD1UNGtEeSQNL5iMsLJ4Q" name="Quantitat">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4tKjANGtEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4tKjAdGtEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6uI8QNGtEeSQNL5iMsLJ4Q" name="Codi Article">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6uQRANGtEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6uQ4ENGtEeSQNL5iMsLJ4Q" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VbqHwNGuEeSQNL5iMsLJ4Q" name="1" memberEnd="_Vbqu0NGuEeSQNL5iMsLJ4Q _VbskAdGuEeSQNL5iMsLJ4Q" navigableOwnedEnd="_Vbqu0NGuEeSQNL5iMsLJ4Q">
+      <ownedEnd xmi:id="_Vbqu0NGuEeSQNL5iMsLJ4Q" name="1..*" type="_I-8aUNGsEeSQNL5iMsLJ4Q" association="_VbqHwNGuEeSQNL5iMsLJ4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vbr88NGuEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VbskANGuEeSQNL5iMsLJ4Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_VbskAdGuEeSQNL5iMsLJ4Q" name="1" type="_Gm7zwJnKEeSKn9p_xl4e_w" association="_VbqHwNGuEeSQNL5iMsLJ4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VbtyINGuEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VbuZMNGuEeSQNL5iMsLJ4Q" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5InTcNGuEeSQNL5iMsLJ4Q" name="*" memberEnd="_5InTcdGuEeSQNL5iMsLJ4Q _5IpIodGuEeSQNL5iMsLJ4Q" navigableOwnedEnd="_5InTcdGuEeSQNL5iMsLJ4Q _5IpIodGuEeSQNL5iMsLJ4Q">
+      <ownedEnd xmi:id="_5InTcdGuEeSQNL5iMsLJ4Q" name="1" type="_EeSGMJm_EeS1-dr6xYXxbA" association="_5InTcNGuEeSQNL5iMsLJ4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5IohkNGuEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5IpIoNGuEeSQNL5iMsLJ4Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_5IpIodGuEeSQNL5iMsLJ4Q" name="*" type="_ltYfQNGtEeSQNL5iMsLJ4Q" association="_5InTcNGuEeSQNL5iMsLJ4Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5IqWwNGuEeSQNL5iMsLJ4Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5IqWwdGuEeSQNL5iMsLJ4Q" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MrqcUNGvEeSQNL5iMsLJ4Q" name="Enviar">
+      <generalization xmi:id="_SxpjINGvEeSQNL5iMsLJ4Q" general="_ltYfQNGtEeSQNL5iMsLJ4Q"/>
+      <ownedOperation xmi:id="_wlVOUNGvEeSQNL5iMsLJ4Q" name="Enviar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ObgCQNGvEeSQNL5iMsLJ4Q" name="Pendiente">
+      <generalization xmi:id="_X9jAQNGvEeSQNL5iMsLJ4Q" general="_ltYfQNGtEeSQNL5iMsLJ4Q"/>
+      <ownedOperation xmi:id="_uNbi0NGvEeSQNL5iMsLJ4Q" name="Anular"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

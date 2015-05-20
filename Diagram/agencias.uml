@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_AhJr0JnLEeSKn9p_xl4e_w" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_eKpgQJnLEeSKn9p_xl4e_w" name="Agencia de Viajes"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iuGdUJnLEeSKn9p_xl4e_w" name="Sucursal">
+    <ownedAttribute xmi:id="_nIC5EJnLEeSKn9p_xl4e_w" name="Nom"/>
+    <ownedAttribute xmi:id="_n5hZUJnLEeSKn9p_xl4e_w" name="Pais"/>
+    <ownedAttribute xmi:id="_rg36gJnLEeSKn9p_xl4e_w" name="Telefon"/>
+    <ownedAttribute xmi:id="_si7NYJnLEeSKn9p_xl4e_w" name="Ciudad"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_k1NzcJnOEeSKn9p_xl4e_w" name="agencia de Viajess[1]" memberEnd="_k1NzcZnOEeSKn9p_xl4e_w _k1OagpnOEeSKn9p_xl4e_w" navigableOwnedEnd="_k1OagpnOEeSKn9p_xl4e_w">
+    <ownedEnd xmi:id="_k1NzcZnOEeSKn9p_xl4e_w" name="agencia de Viajess" type="_eKpgQJnLEeSKn9p_xl4e_w" aggregation="composite" association="_k1NzcJnOEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k1OagJnOEeSKn9p_xl4e_w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k1OagZnOEeSKn9p_xl4e_w" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_k1OagpnOEeSKn9p_xl4e_w" name="sucursals" type="_iuGdUJnLEeSKn9p_xl4e_w" association="_k1NzcJnOEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k1PBkJnOEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k1PBkZnOEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oyHG0JnOEeSKn9p_xl4e_w" name="Hotel">
+    <ownedAttribute xmi:id="_rMrEwJnOEeSKn9p_xl4e_w" name="Nom"/>
+    <ownedAttribute xmi:id="_sIFkIJnOEeSKn9p_xl4e_w" name="Categoria"/>
+    <ownedAttribute xmi:id="_04axUJnOEeSKn9p_xl4e_w" name="Telefon"/>
+    <ownedAttribute xmi:id="_1svKMJnOEeSKn9p_xl4e_w" name="Ciudad"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZOADQJnPEeSKn9p_xl4e_w" name="Reserva">
+    <ownedAttribute xmi:id="_izIxgJnPEeSKn9p_xl4e_w" name="GetDNI"/>
+    <ownedAttribute xmi:id="_xlDGoJnPEeSKn9p_xl4e_w" name="Fecha Salida"/>
+    <ownedAttribute xmi:id="_zqizgJnPEeSKn9p_xl4e_w" name="Plazas"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eQa0QJnPEeSKn9p_xl4e_w" name="Cliente">
+    <ownedAttribute xmi:id="_fH4nwJnPEeSKn9p_xl4e_w" name="DNI"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hQO0UJnPEeSKn9p_xl4e_w" name="ordensToClientes" memberEnd="_hQPbYJnPEeSKn9p_xl4e_w _hQQpgJnPEeSKn9p_xl4e_w" navigableOwnedEnd="_hQQpgJnPEeSKn9p_xl4e_w">
+    <ownedEnd xmi:id="_hQPbYJnPEeSKn9p_xl4e_w" name="ordens" type="_ZOADQJnPEeSKn9p_xl4e_w" aggregation="shared" association="_hQO0UJnPEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQQCcJnPEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQQCcZnPEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_hQQpgJnPEeSKn9p_xl4e_w" name="clientes" type="_eQa0QJnPEeSKn9p_xl4e_w" association="_hQO0UJnPEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQRQkJnPEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQRQkZnPEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A02RoJnQEeSKn9p_xl4e_w" name="reservasToHotels" memberEnd="_A024sJnQEeSKn9p_xl4e_w _A04G0ZnQEeSKn9p_xl4e_w" navigableOwnedEnd="_A04G0ZnQEeSKn9p_xl4e_w">
+    <ownedEnd xmi:id="_A024sJnQEeSKn9p_xl4e_w" name="reservas" type="_ZOADQJnPEeSKn9p_xl4e_w" aggregation="shared" association="_A02RoJnQEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A03fwJnQEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A04G0JnQEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_A04G0ZnQEeSKn9p_xl4e_w" name="hotels" type="_oyHG0JnOEeSKn9p_xl4e_w" association="_A02RoJnQEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A04t4JnQEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A05U8JnQEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DKmBAJnQEeSKn9p_xl4e_w" name="sucursalsToReservas" memberEnd="_DKmBAZnQEeSKn9p_xl4e_w _DKnPIZnQEeSKn9p_xl4e_w" navigableOwnedEnd="_DKnPIZnQEeSKn9p_xl4e_w">
+    <ownedEnd xmi:id="_DKmBAZnQEeSKn9p_xl4e_w" name="sucursals" type="_iuGdUJnLEeSKn9p_xl4e_w" aggregation="composite" association="_DKmBAJnQEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DKmoEJnQEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKnPIJnQEeSKn9p_xl4e_w" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_DKnPIZnQEeSKn9p_xl4e_w" name="reservas" type="_ZOADQJnPEeSKn9p_xl4e_w" association="_DKmBAJnQEeSKn9p_xl4e_w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DKn2MJnQEeSKn9p_xl4e_w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKodQJnQEeSKn9p_xl4e_w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
